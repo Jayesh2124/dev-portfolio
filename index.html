@@ -16,32 +16,33 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav container">
             <a href="" class="nav-logo">
-                <img src="assets/img/Logo.png" alt="Jayesh" style="height: 100px; width: 100px; margin-top: 2.9rem;">
+                <img src="assets/img/Logo.png" alt="Jayesh" style="height: 60px; width: 60px; ">
             </a>
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
+                        <a href="#home" class="nav-link active-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Services</a>
+                        <a href="#service" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Skills</a>
+                        <a href="#skills" class="nav-link">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Works</a>
+                        <a href="#works" class="nav-link">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Resume</a>
+                        <a href="#resume" class="nav-link">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Testimonials</a>
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
 
@@ -56,20 +57,19 @@
                         <i class="ri-github-fill"></i>
                     </a>
                 </div>
+                <div class="section-deco deco-left header-deco">
+                    <img src="assets/img/shape-1.png" alt="" class="shape">
+                </div>
             </div>
             <div class="nav-buttons">
-                <div class="nav-settings">
-                    <i class="ri-settings-3-line"></i>
-                </div>
                 <div class="nav-toggle" id="nav-toggle">
-
                 </div>
             </div>
         </nav>
     </header>
     <!-- Home -->
     <main class="main">
-        <section class="home section">
+        <section class="home section" id="home">
             <div class="home-container container">
                 <div class="home-content">
                     <h2 class="home-subtitle"> Hello, <span>My Name is</span></h2>
@@ -127,7 +127,7 @@
 
     <!-- Home -->
     <!-- Service -->
-    <section class="services section">
+    <section class="services section" id="service">
         <h2 class="section-title" data-title="My Services">
             What I can do
         </h2>
@@ -141,7 +141,7 @@
                         I create clean, scalable front-ends with smooth user experiences, API integration, and mobile-friendly design — all optimized for speed, 
                         usability, and performance.
                         </p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                     <!-- 2 -->
                     <div class="swiper-slide card">
@@ -154,7 +154,7 @@
                         <p class="services-description">
                             Developing secure, scalable RESTful APIs and business logic using C# .NET, Node.js, or Python. Implementing authentication, authorization, and real-time data processing.
                         </p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                     <!-- 3 -->
                     <div class="swiper-slide card">
@@ -167,7 +167,7 @@
                         <p class="services-description">
                             Designing efficient database schemas (SQL Server, MongoDB), optimizing queries, and implementing backup/recovery strategies.
                         </p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                     <!-- 4 -->
                     <div class="swiper-slide card">
@@ -180,7 +180,7 @@
                         <p class="services-description">
                             Designing interactive 2D/3D games using Unity and C#. From gameplay mechanics and UI systems to physics, animations, and audio — I craft immersive experiences with clean, scalable code and optimized performance for PC, mobile, and web.
                         </p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -193,7 +193,7 @@
 
 
     <!-- Skills -->
-    <section class="skills section">
+    <section class="skills section" id="skills">
         <h2 class="section-title" data-title="My Talent">
             Professional Skills
         </h2>
@@ -204,7 +204,7 @@
                     <h3 class="skills-name">.NET Core</h3>
                     <span class="skills-value">85 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Experienced in building scalable RESTful APIs and enterprise-grade backend systems using ASP.NET Core with clean architecture and modern design patterns.
                 </p>
                 <div class="skills-bar">
@@ -216,7 +216,7 @@
                     <h3 class="skills-name">C#</h3>
                     <span class="skills-value">90 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Proficient in object-oriented programming, asynchronous programming, LINQ, and building secure backend logic and desktop applications.
                 </p>
                 <div class="skills-bar">
@@ -228,7 +228,7 @@
                     <h3 class="skills-name">Angular </h3>
                     <span class="skills-value">95 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Skilled in developing dynamic single-page applications using Angular, with strong command over RxJS, services, routing, and modular architecture.
                 </p>
                 <div class="skills-bar">
@@ -240,7 +240,7 @@
                     <h3 class="skills-name">SQL Server</h3>
                     <span class="skills-value">90 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Expert in writing optimized SQL queries, stored procedures, indexing, and ensuring data integrity and performance in relational databases.
                 </p>
                 <div class="skills-bar">
@@ -252,7 +252,7 @@
                     <h3 class="skills-name">Tailwind CSS</h3>
                     <span class="skills-value">70 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Capable of designing responsive and modern UIs using utility-first classes for clean, maintainable CSS structures.
                 </p>
                 <div class="skills-bar">
@@ -264,7 +264,7 @@
                     <h3 class="skills-name">Node Js</h3>
                     <span class="skills-value">70 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Knowledgeable in building lightweight backend services and REST APIs using Express.js with JWT authentication and MongoDB integration.
                 </p>
                 <div class="skills-bar">
@@ -276,7 +276,7 @@
                     <h3 class="skills-name">TypeScript/Javascript</h3>
                     <span class="skills-value">85 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Strong understanding of core programming concepts, DOM manipulation, event handling, and type-safe code using ES6+ and TypeScript.
                 </p>
                 <div class="skills-bar">
@@ -288,7 +288,7 @@
                     <h3 class="skills-name">MongoDB</h3>
                     <span class="skills-value">80 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Hands-on experience with NoSQL data modeling, CRUD operations, and aggregations using Mongoose in MERN/MEAN stacks.
                 </p>
                 <div class="skills-bar">
@@ -300,7 +300,7 @@
                     <h3 class="skills-name"> Azure </h3>
                     <span class="skills-value">80 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Familiar with deploying and managing cloud applications using services like Azure App Service, SQL Database, Blob Storage, and DevOps pipelines.
                 </p>
                 <div class="skills-bar">
@@ -312,7 +312,7 @@
                     <h3 class="skills-name"> Docker </h3>
                     <span class="skills-value">90 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Proficient in containerizing applications, managing images, volumes, and deploying multi-container setups for development and production environments.
                 </p>
                 <div class="skills-bar">
@@ -324,7 +324,7 @@
                     <h3 class="skills-name"> React (Basic) </h3>
                     <span class="skills-value">60 <b>%</b></span>
                 </div>
-                <p class="skills-descripton">
+                <p class="skills-description">
                     Basic understanding of React fundamentals including components, props, state, and hooks to build interactive UIs.
                 </p>
                 <div class="skills-bar">
@@ -338,7 +338,7 @@
     </section>
 
     <!-- PortFolio -->
-    <section class="work section">
+    <section class="work section" id="works">
         <h2 class="section-title" data-title="My work">
             Portfolio
         </h2>
@@ -358,7 +358,7 @@
                         <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
                 <div class="mix development">
@@ -369,7 +369,7 @@
                         <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
                 <div class="mix enhance">
@@ -380,40 +380,40 @@
                         <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
-                <div class="mix enhance">
+                <div class="mix photos">
                     <div class="card">
-                        <img src="assets/img/project4.jpeg" alt="" class="work-img">
-                        <h4 class="work-category">Development</h4>
-                        <h3 class="work-title">Explore</h3>
+                        <img src="assets/img/doubleRainbow.jpg" alt="" class="work-img">
+                        <h4 class="work-category">Photography</h4>
+                        <h3 class="work-title">Double Rainbow</h3>
                         <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
                 <div class="mix photos">
                     <div class="card">
                         <img src="assets/img/loveFlower.jpg" alt="" class="work-img">
                         <h4 class="work-category">Photography</h4>
-                        <h3 class="work-title">Explore</h3>
-                        <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <h3 class="work-title">Lily (Love Flower)</h3>
+                        <p class="work-description">Pink lilies stand for love, femininity and admiration. <br>
+                            <b>Capture using Phone</b>: In admiration of <br>
+                             love small flower represents purity and togetherness </p>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
                 <div class="mix photos">
                     <div class="card">
                         <img src="assets/img/hope.jpg" alt="" class="work-img" style="object-fit: cover;">
                         <h4 class="work-category">Photography</h4>
-                        <h3 class="work-title">Explore</h3>
+                        <h3 class="work-title">Light of hope in darkness</h3>
                         <p class="work-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod
                             tempor incididunt ut labore et dolore.</p>
-                        <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a>
+                        <!-- <a href="" class="link">See Pricing <i class="ri-arrow-right-line link-icon"></i></a> -->
                     </div>
                 </div>
 
@@ -426,7 +426,7 @@
 
     <!-- Resume -->
 
-    <section class="resume section">
+    <section class="resume section" id="resume">
         <h2 class="section-title" data-title="My Story">Resume</h2>
         <div class="resume-container container grid">
             <div class="resume-group">
@@ -541,7 +541,7 @@
     </section>
 
     <!-- Testimonials  -->
-    <section class="testimonials section">
+    <section class="testimonials section" id="testimonials">
         <h2 class="section-title" data-title="My Customer Say">Testimonials</h2>
         <div class="container">
             <div class="swiper testimonial-swiper">
@@ -582,31 +582,7 @@
                         <h3 class="testinomial-name">Roy Wang</h3>
                         <span class="testimonial-author">Manager GYM</span>
                     </div>
-                    <div class="swiper-slide card">
-                        <div class="testimonial-icon">
-                            <i class="ri-double-quotes-r"></i>
-                        </div>
-                        <img src="assets/img/testimonial4.jpg" alt="" class="testimonial-img">
-                        <p class="testimonials-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <h3 class="testinomial-name">Jennifer Smith</h3>
-                        <span class="testimonial-author">CEO & Founder</span>
-                    </div>
-                    <div class="swiper-slide card">
-                        <div class="testimonial-icon">
-                            <i class="ri-double-quotes-r"></i>
-                        </div>
-                        <img src="assets/img/testimonial5.jpg" alt="" class="testimonial-img">
-                        <p class="testimonials-description">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                        <h3 class="testinomial-name">Paul Freeman</h3>
-                        <span class="testimonial-author">Photographer</span>
-                    </div>
-
+                    
                 </div>
                 <div class="swiper-pagination">
 
@@ -619,7 +595,7 @@
     </section>
 
     <!-- Contact -->
-    <section class="contact section">
+    <section class="contact section" id="contact">
         <h2 class="section-title" data-title="Let's Talk About Ideas">Contact Me</h2>
         <div class="contact-container container grid">
             <div class="contact-content">

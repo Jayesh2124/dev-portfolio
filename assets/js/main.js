@@ -8,10 +8,45 @@ navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('animate-toggle');
 })
 /*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav-link');
+const linkAction = () =>{
+    const navMenu = document.getElementById('nav-menu')
+    navToggle.classList.remove('animate-toggle');
+    navMenu.classList.remove('show-menu');
+}
+
+navLink.forEach((n)=>{
+    n.addEventListener('click', linkAction);
+})
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+const scrollHeader = ()=>{
+    const header = document.getElementById('header');
+    this.scrollY >= 20 ? header.classList.add('bg-header') : header.classList.remove('bg-header')
+}
 
+window.addEventListener('scroll', scrollHeader)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+const scrollActive = () =>{
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current)=>{
+        const sectionHeight = current.offsetHeight - 58,
+        sectionTop = current.offsetTop,
+        sectionId = current.getAttribute('id'),
+        sectionClass = document.querySelector('.nav-menu a[href*=' + sectionId + ']');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            sectionClass.classList.add('active-link')
+        }else
+        {
+            sectionClass.classList.remove('active-link')
+        }
+    })
+}
+
+window.addEventListener('scroll',scrollActive)
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper('.services-swiper', {
